@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    public function show() {
+        $user = User::all();
+        return $user;
+    }
 
     public function register(Request $request) {
             $feilds = $request->validate([

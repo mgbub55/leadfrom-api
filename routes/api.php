@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 // Public Routes
 Route::post('/register',[AuthController::class, 'register']);
 Route::post('/login',[AuthController::class, 'login']);
+Route::get('/allUsers', [AuthController::class, 'show']);
 // Route::get('/products',[ProductsController::class, 'index']);
 // Route::get('/products/{id}',[ProductsController::class, 'show']);
 // Route::get('/products/search/{query}',[ProductsController::class, 'search']);
